@@ -12,6 +12,8 @@ body * {
 
 body{
   cursor: url('../img/cursor1.png') 4 12, auto;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .main__container {
@@ -147,6 +149,14 @@ body{
   .main__container .box__ form > .group__input > input {
     height: 29px;
     font-size: 14px;
+  }
+}
+@media (max-width: 767px) {
+  .main__container {
+    background: url("../img/backsmall.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 @media (max-width: 375px) {

@@ -26,12 +26,14 @@
 
 	<script>
 		setInterval(()=>{
-			document.body.style.cursor = "url(img/cursor2.png), auto";
+			if(document.body.style.cursor.includes('cursor2')){
+			    document.body.style.cursor = "url(img/cursor1.png) 4 12, auto";
+			}else{
+				document.body.style.cursor = "url(img/cursor2.png) 4 12, auto";
+			}
 		}, 300)
 
-		setInterval(()=>{
-			document.body.style.cursor = "url(img/cursor1.png), auto";
-		}, 600)
+		
 	</script>
 </body>
 </html>
