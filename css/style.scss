@@ -1,0 +1,139 @@
+body,html{
+	margin:0px;
+	padding:0px;
+	overflow-x:hidden;
+}
+body *{
+	box-sizing:border-box;
+	font-family:"Roboto Condensed" , sans-serif;
+}
+.main__container{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	background:url('../img/back.webp');
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	& .box__{
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		position: relative;
+		&>.float{
+			position: absolute;
+			left: -120px;
+			top:80px;
+			max-width: 130px;
+		}
+		&>.float__right{
+			max-width: 120px;
+			position: absolute;
+			right: -40px;
+			bottom:30px;
+		}
+		&>.main{
+			z-index: 2;
+		}
+		& form{
+			position: absolute;
+			left: 42px;
+			bottom:50px;
+			z-index: 3;
+			width: 309px;
+			&>.group__input{
+				width: 100%;
+				&>input{
+					width: 100%;
+					border:1px solid #0E64C8;
+					text-align:center;
+					background-color:#fff;
+					font-size: 20px;
+					font-weight: bold;
+					color:#000;
+					outline:none;
+					height: 40px;
+					&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+					  color: rgba(0,0,0,.3);
+					}
+					&::-moz-placeholder { /* Firefox 19+ */
+					  color: rgba(0,0,0,.3);
+					}
+					&:-ms-input-placeholder { /* IE 10+ */
+					  color: rgba(0,0,0,.3);
+					}
+					&:-moz-placeholder { /* Firefox 18- */
+					  color: rgba(0,0,0,.3);
+					}
+				}
+			}
+			& .group__submit{
+				margin-top: 5px;
+				&>button{
+					height: 40px;
+					cursor:pointer;
+					outline:none;
+					border:0px;
+					background-color:#0e64c6;
+					display: inline-flex;
+					align-items:center;
+					justify-content:center;
+					color:#fff;
+					font-weight: bold;
+					font-size: 20px;
+					width: 100%;
+				}
+			}
+		}
+		&>img{
+			max-height: 740px;
+		}
+	}
+}
+@media (max-width: 1440px){
+	.main__container .box__ > img{
+		max-height: 580px;
+	}
+	.main__container .box__ > .float{
+		max-width:120px;
+		left: -100px;
+		top:60px; 
+	}
+	.main__container .box__ form{
+		bottom:41px;
+		left: 33px;
+		width: 242px;
+	}
+	.main__container .box__ form .group__submit > button{
+		height: 29px;
+		font-size: 14px;
+	}
+	.main__container .box__ form > .group__input > input{
+		height: 29px;
+		font-size: 14px;
+	}
+}
+@media (max-width: 375px){
+	.main__container .box__ > img{
+		max-height: 540px;
+	}
+	.main__container .box__ > .float{
+		max-width: 100px;
+		left: -90px;
+	}
+	.main__container .box__ form{
+		left: 30px;
+		width: 227px;
+		bottom:39px;
+	}
+	.main__container .box__ form .group__submit > button{
+		height: 25px;
+		font-size: 13px;
+	}
+	.main__container .box__ form > .group__input > input{
+		height: 28px;
+		font-size: 13px;
+	}
+}
