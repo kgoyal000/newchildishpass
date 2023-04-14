@@ -186,13 +186,13 @@ body * {
     font-size: 13px;
   }
 
-  .main__container .box__ > img {
+  /* .main__container .box__ > img {
     max-height: 520px;
-  }
+  } */
 
-  .main__container .box__ form {
+  /* .main__container .box__ form {
     width: 218px;
     left: 29px;
     bottom: 36px;
-  }
+  } */
 }
