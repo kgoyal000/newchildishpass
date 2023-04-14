@@ -1,19 +1,20 @@
+body{
+  cursor: url('../img/cursor1.png') 4 12, auto;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
 body, html {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto Condensed" , sans-serif;
-}
-
-body{
-  cursor: url('../img/cursor1.png') 4 12, auto;
-  max-height: 100vh;
-  overflow: hidden;
 }
 
 .main__container {
@@ -183,5 +184,15 @@ body{
   .main__container .box__ form > .group__input > input {
     height: 28px;
     font-size: 13px;
+  }
+
+  .main__container .box__ > img {
+    max-height: 520px;
+  }
+
+  .main__container .box__ form {
+    width: 218px;
+    left: 29px;
+    bottom: 36px;
   }
 }
