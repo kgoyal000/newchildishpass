@@ -162,7 +162,7 @@ body * {
 }
 @media (max-width: 375px) {
   .main__container .box__ > img {
-    max-height: 540px;
+    max-height: 450px;
   }
 
   .main__container .box__ > .float {
@@ -171,9 +171,9 @@ body * {
   }
 
   .main__container .box__ form {
-    left: 30px;
-    width: 227px;
-    bottom: 39px;
+    left: 26px;
+    width: 190px;
+    bottom: 29px;
   }
 
   .main__container .box__ form .group__submit > button {
